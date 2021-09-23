@@ -1,0 +1,41 @@
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-10 mx-auto">
+    <h1 class="h2 text-center my-3">Notas</h1>
+
+    <table class="table bg-dark">
+      <thead>
+        <tr>
+          <th>Disciplina</th>
+          <th>P1</th>
+          <th>P2</th>
+          <th>Média final</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let item of this.disciplinas.getDisciplinas(); index as i">
+          <td>{{item.nome}}</td>
+          <td>
+            
+              <input class="form-control" type="number" #p1 value="{{item.p1}}" min="0" max="10">
+              <button class="text-center mt-2" (click)="this.disciplinas.atualizarNota1(i,p1.value);">Gravar nota</button>
+            
+          </td>
+          <td>
+            
+              <input class="form-control" type="number" #p2 value="{{item.p2}}" min="0" max="10">
+              <button class="text-center mt-2" (click)="this.disciplinas.atualizarNota2(i,p2.value);">Gravar nota</button>
+            
+          </td>
+          <td>
+            <span class="badge bg-success" *ngIf="this.disciplinas.getMedia(i) >= 6.00;">{{this.disciplinas.getMedia(i).toFixed(2)}}</span>
+            <span class="badge bg-danger" *ngIf="this.disciplinas.getMedia(i) < 6.00">{{this.disciplinas.getMedia(i).toFixed(2)}}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+</div>

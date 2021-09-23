@@ -1,0 +1,60 @@
+<div class="container-fluid">
+
+<div class="card mt-3 mb-3 bg-dark border-light text-center"  style="max-width: 400px;">
+
+<div class="container mb-3 bg-gray" style="max-width: 350px;">
+
+<div class="row mt-2">
+  <div class="col-4">
+  <img class="subject" src="https://avatars.githubusercontent.com/u/81319888?v=4" />
+  </div>  
+  <div class="col-8">
+    <div class="row mt-2">
+    <p>Matrícula: 005*********23</p>
+    </div>
+    <div class="row">
+    <p>Nome: Renê Pádua</p>
+    </div>
+  </div>
+
+</div>
+  <div class="row">
+  <div class="col-4">
+  <img src="http://pngimg.com/uploads/github/github_PNG93.png">
+
+  </div>  
+  <div class="col-8 mt-2">
+  <h3>
+  <a href="https://github.com/RenePadua">github.com/RenePadua</a>
+ </h3>
+  </div>
+</div>
+</div>
+</div>
+
+  <h1>Horário de aula</h1>
+
+  <div class="card-body">
+  <div class="col-md-10 mx-auto">
+    <table class="table table-stripped table-dark">
+      <thead>
+        <tr>
+        <th>Dias</th>
+        <th>Disciplinas</th>  
+        <th>Horários</th>
+        </tr>
+      </thead>
+      
+      <tbody class="bg-grey">
+        <tr *ngFor="let item of this.disciplinas.getDisciplinas();index as i">
+          <td>{{item.dia}}</td>
+          <td>{{item.nome}}</td>
+          <td>{{item.horario}}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+

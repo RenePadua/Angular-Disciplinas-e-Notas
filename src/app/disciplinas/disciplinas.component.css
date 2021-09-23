@@ -1,0 +1,30 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  border-radius: 80%;
+  border-style: solid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+thead {
+  text-align: center;
+}
+
+input {
+  margin: 0 0 20px 0;
+}
+
+.d-grid {
+  margin: 0 0 10px 0;
+}

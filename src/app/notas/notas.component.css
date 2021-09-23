@@ -1,0 +1,26 @@
+table {
+  color: white;
+  text-align: center;
+}
+
+
+tr {
+  height: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+input {
+  margin: auto;
+  width: 100%;
+  padding: 0 0 0 0 ;
+  text-align: center;
+}
+
+button {
+  margin: auto;
+  width: 100%;
+  padding: 0 0 0 0 ;
+  text-align: center;
+}
+
